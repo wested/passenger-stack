@@ -1,3 +1,16 @@
+# WEI Setup
+
+## Setup User
+
+1. After new slice is built login with root password
+2. run `adduser provision` to add a new user
+3. run `vim /etc/sudoers` to open the sudoers file 
+  * we'll add the new user to the file by adding 
+     `provision   ALL=(ALL) ALL` 
+    to the line below root in the 'User privilege specification' section
+4. You may also want to set up a wei user following the above steps again
+____
+
 # Passenger stack, zero to hero in under five minutes
 Scripts for [Sprinkle](http://github.com/crafterm/sprinkle/ "Sprinkle"), the provisioning tool
 
