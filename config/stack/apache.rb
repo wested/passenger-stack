@@ -92,7 +92,7 @@ package :apache_expires_support do
   <IfModule mod_expires.c>
     <FilesMatch "\.(jpg|gif|png|css|js)$">
          ExpiresActive on
-         ExpiresDefault "access plus 1 year"
+         ExpiresDefault "access plus 1 day"
      </FilesMatch>
   </IfModule>
 eol
