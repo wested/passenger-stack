@@ -2,9 +2,9 @@
 
 ## Setup User
 
-1. After new slice is built login with root password
+1. After new slice is built, login with root password
 2. run `adduser provision` to add a new user
-3. run `vim /etc/sudoers` to open the sudoers file 
+3. run `visudo` (NOT VI, VIM, EMACS)
   * we'll add the new user to the file by adding 
      `provision   ALL=(ALL) ALL` 
     to the line below root in the 'User privilege specification' section
