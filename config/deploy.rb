@@ -9,4 +9,4 @@ role :app, "173.45.228.2"    # Calipers QC (Silver)
 # Fill user in - if remote user is different to your local user
 set :user, "provision"
 
-
+default_run_options[:pty] = true
