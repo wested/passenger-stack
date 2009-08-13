@@ -1,10 +1,11 @@
 package :ruby_enterprise do
   description 'Ruby Enterprise Edition'
   version '1.8.6-20090610'
+  rubyforge_num '58677'
   
   install_path = "/usr/local/ruby-enterprise"
   binaries = %w(erb gem irb passenger-config passenger-install-apache2-module passenger-make-enterprisey passenger-memory-stats passenger-spawn-server passenger-status passenger-stress-test rackup rails rake rdoc ree-version ri ruby testrb)
-  source "http://www.rubyenterpriseedition.com/ruby-enterprise-#{version}.tar.gz" do
+  source "http://rubyforge.org/frs/download.php/#{rubyforge_num}/ruby-enterprise-#{version}.tar.gz" do
     custom_install 'sudo ./installer --auto=/usr/local/ruby-enterprise'
     
     binaries.each {|bin| post :install, "ln -s #{install_path}/bin/#{bin} /usr/local/bin/#{bin}" }
