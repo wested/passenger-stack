@@ -9,6 +9,7 @@
 #role :app, "173.45.227.248"    # DSP Production
 #role :app, "10.1.102.84"    # vmware
 #role :app, "173.45.225.15"   # CES Production
+role :app, "10.211.55.13"   # parallels
 
 # Fill user in - if remote user is different to your local user
 set :user, "provision"
